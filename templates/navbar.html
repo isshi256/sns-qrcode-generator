@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SNS QRCode Generator</title>
+    <style type="text/css" media="screen">
+        @import url("/assets/Semantic-UI-CSS/semantic.css");
+    </style>
+</head>
+<body>
+<div class="ui attached stackable menu">
+    <div class="ui container">
+        <a class="item" href="/">
+            <i class="home icon"></i> Home
+        </a>
+        <a class="item" href="/settings">
+            <i class="settings icon"></i> Settings
+        </a>
+        <a class="item" href="/mkqrcode">
+            <i class="qrcode icon"></i> QRCode
+        </a>
+    </div>
+</div>
+{{template "content" .}}
+</body>
+</html>

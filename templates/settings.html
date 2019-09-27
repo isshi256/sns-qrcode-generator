@@ -1,0 +1,93 @@
+{{define "content"}}
+<div class="ui equal width center aligned padded grid">
+    <div class="row"></div>
+    <div class="row">
+        <div class="column">
+            <h2 class="ui header grey">
+                Your sns account settings .
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="ui steps">
+                <div class="disabled step">
+                    <i class="info circle icon"></i>
+                    <div class="content">
+                        <div class="title">Getting started</div>
+                        <div class="description">はじめにすること</div>
+                    </div>
+                </div>
+                <div class="step">
+                    <i class="cogs icon grey"></i>
+                    <div class="content">
+                        <div class="title">Settings</div>
+                        <div class="description">SNSの情報を設定しよう</div>
+                    </div>
+                </div>
+                <div class="disabled step">
+                    <i class="qrcode icon"></i>
+                    <div class="content">
+                        <div class="title">Create QRCode</div>
+                        <div class="description">QRコードを発行しよう
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+                    <div class="column">
+                        <form class="ui form" method="post" action="/save">
+                            <div class="field">
+                                <div class="ui labeled input">
+                                    <div class="ui teal label">
+                                        <i class="facebook icon"></i>
+                                    </div>
+                                    <input type="text" name="facebook" placeholder="Your account ID of Facebook."
+                                           value="{{.mySnsData.Facebook}}">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui labeled input">
+                                    <div class="ui teal label">
+                                        <i class="twitter icon"></i>
+                                    </div>
+                                    <input type="text" name="twitter" placeholder="Your User ID of Twitter."
+                                           value="{{.mySnsData.Twitter}}">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui labeled input">
+                                    <div class="ui teal label">
+                                        <i class="instagram icon"></i>
+                                    </div>
+                                    <input type="text" name="instagram" placeholder="Your account ID of Instagram."
+                                           value="{{.mySnsData.Instagram}}">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui labeled input">
+                                    <div class="ui teal label">
+                                        <i class="comment icon"></i>
+                                    </div>
+                                    <input type="text" name="line" placeholder="Your account ID if LINE." 
+                                           value="{{.mySnsData.Line}}">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <button class="ui primary button">
+                                    Save
+                                </button>
+                                <button class="ui button" onclick="javascript: form.action='/alldiscard';">
+                                    All Discard
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                <div class="column"></div>
+            </div>
+        </div>
+    </div>
+{{end}}
