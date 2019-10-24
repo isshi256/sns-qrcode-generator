@@ -1,0 +1,60 @@
+{{define "content"}}
+<div class="ui equal width width center aligned padded grid">
+    <div class="row"></div>
+    <div class="row">
+        <div class="column">
+            <h2 class="ui header grey">
+                Create QRCode .
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="ui steps">
+                <div class="disabled step">
+                    <i class="info circle icon"></i>
+                    <div class="content">
+                        <div class="title">Getting started</div>
+                        <div class="description">はじめにすること</div>
+                    </div>
+                </div>
+                <div class="disabled step">
+                    <i class="cogs icon"></i>
+                    <div class="content">
+                        <div class="title">Settings</div>
+                        <div class="description">SNSの情報を設定しよう</div>
+                    </div>
+                </div>
+                <div class="step">
+                    <i class="qrcode icon grey"></i>
+                    <div class="content">
+                        <div class="title">Create QRCode</div>
+                        <div class="description">QRコードを発行しよう</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="ui two column grid">
+            <div class="column">
+                <button class="ui facebook button">
+                    <i class="facebook icon"></i>
+                    <a style="color :white" href="/qrcode/facebook">Facebook</a>
+                </button>
+                <button class="ui twitter button">
+                    <i class="twitter icon"></i>
+                    <a style="color: white" href="/qrcode/twitter">Twitter</a>
+                </button>
+                <button class="ui pink button">
+                    <i class="instagram icon"></i>
+                    <a style="color: white" href="/qrcode/instagram">Instagram</a>
+                </button>
+                <button class="ui green button">
+                    <i class="comment icon"></i>
+                    <a style="color: white" href="/qrcode/line">LINE</a>
+                </button>
+            </div>
+        </div>
+    </div>
+{{end}}
